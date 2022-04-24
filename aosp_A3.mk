@@ -2,8 +2,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PE stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from A3 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -11,7 +11,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := umidigi
 PRODUCT_DEVICE := A3
 PRODUCT_MANUFACTURER := umidigi
-PRODUCT_NAME := lineage_A3
+PRODUCT_NAME := aosp_A3
 PRODUCT_MODEL := A3
 
 PRODUCT_GMS_CLIENTID_BASE := android-umidigi
